@@ -1,8 +1,8 @@
 {
-  "name": "cra-template-skochdev",
+  "name": "02-01-events-and-state",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://skochdev.github.io/cra-template-skochdev",
+  "homepage": "https://skochdev.github.io/02-01-events-and-state",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
