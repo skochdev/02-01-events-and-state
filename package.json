@@ -44,6 +44,7 @@
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "modern-normalize": "^1.1.0",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
     "styled-components": "^5.3.5",
