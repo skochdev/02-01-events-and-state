@@ -3,7 +3,7 @@ import * as S from './ColorPicker.styled';
 
 class ColorPicker extends Component {
   state = {
-    activePicker: null,
+    activePicker: '',
   };
 
   setActiveIndex = index => {
@@ -17,11 +17,13 @@ class ColorPicker extends Component {
   render() {
     const { options } = this.props;
     const { activePicker } = this.state;
+    const selectedColor = options[activePicker]?.color;
 
     return (
       <S.ColorPicker className="ColorPicker">
         <S.ColorPickerTitle>Color Picker</S.ColorPickerTitle>
         <div>
+          <p>Selected color: {selectedColor}</p>
           {options.map(({ label, color }, index) => (
             <S.ColorPickerOption
               key={label}
