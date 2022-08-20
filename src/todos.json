@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "description": "Learn React",
+    "isCompleted": false
+  },
+  {
+    "id": "02",
+    "description": "Learn Router",
+    "isCompleted": true
+  },
+  {
+    "id": "03",
+    "description": "Learn Redux",
+    "isCompleted": true
+  },
+  {
+    "id": "04",
+    "description": "Get a job",
+    "isCompleted": false
+  }
+]

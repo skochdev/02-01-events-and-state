@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 export const Dropdown = styled.div`
   position: relative;
-  width: 400px;
+  min-width: 300px;
   padding: ${p => p.theme.space[3]}px;
   border: ${p => p.theme.borders[1]};
   border-color: ${p => p.theme.colors.primary};

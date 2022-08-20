@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
+
 export const ColorPicker = styled.div`
-  width: 400px;
+  min-width: 300px;
   padding: 10px;
   border: 1px solid black;
 `;
@@ -11,8 +12,8 @@ export const ColorPickerTitle = styled.h2`
 
 export const ColorPickerOption = styled.button`
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 4px;
   border: none;
   outline: none;
