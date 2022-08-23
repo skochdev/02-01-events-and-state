@@ -1,6 +1,6 @@
 import { Todo } from './Todo/';
 import * as S from './TodoList.styled';
-import { Box } from '../Box/Box';
+import { Box } from '../Box';
 
 export const TodoList = ({
   data,

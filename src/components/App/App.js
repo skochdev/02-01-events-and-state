@@ -1,4 +1,4 @@
-import { Box } from '../Box/Box';
+import { Box } from '../Box';
 import { Counter } from '../Counter';
 import { DropDownMenu } from '../DropDownMenu';
 import { colorPickerOptions } from 'colors';
@@ -6,10 +6,12 @@ import ColorPicker from '../ColorPicker/ColorPicker';
 import { TodoList } from '../TodoList';
 import { Component } from 'react';
 import initialTodos from 'todos.json';
+import { Form } from '../Form';
 
 class App extends Component {
   state = {
     todos: initialTodos,
+    submittedFormData: {},
   };
 
   removeTodo = todoId => {
@@ -18,9 +20,15 @@ class App extends Component {
     }));
   };
 
+  handleSubmittedForm = ({ name, surname }) => {
+    this.setState({
+      submittedFormData: { name, surname },
+    });
+  };
+
   render() {
-    const { removeTodo } = this;
-    const { todos } = this.state;
+    const { removeTodo, handleSubmittedForm } = this;
+    const { todos, submittedFormData } = this.state;
     const totalTodos = todos.length;
     const completedTodos = todos.reduce(
       (totalCompleted, todo) =>
@@ -49,6 +57,15 @@ class App extends Component {
             />
           ) : (
             <p>No todos </p>
+          )}
+        </Box>
+        <Box>
+          <Form onFormSubmit={handleSubmittedForm} />
+          {submittedFormData && (
+            <div>
+              <p>Name submitted: {submittedFormData.name}</p>
+              <p>Surname submitted: {submittedFormData.surname}</p>
+            </div>
           )}
         </Box>
       </Box>
