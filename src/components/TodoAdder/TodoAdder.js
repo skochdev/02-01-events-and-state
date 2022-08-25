@@ -27,6 +27,7 @@ export class TodoAdder extends Component {
         <form onSubmit={handleSubmitNewTodo}>
           <label>
             <textarea
+              required
               onChange={onNewTodoChange}
               value={this.state.newTodoText}></textarea>
           </label>
